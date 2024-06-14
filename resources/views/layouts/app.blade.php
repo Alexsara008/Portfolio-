@@ -43,6 +43,26 @@
 
                     </ul>
 
+<!-- esto es una ruta para proyectos en la barra de navegación -->
+                    <ul class="navbar-nav me-auto">
+                    @if (Route::has('login'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('information.index') }}">{{ __('Informacion') }}</a>
+                                </li>
+                    @endif
+                    </ul>
+
+                    <!-- ruta de navegacion para informaciones  -->
+
+                    <ul class="navbar-nav me-auto">
+                    @if (Route::has('login'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('descripciones.index') }}">{{ __('Descripciones') }}</a>
+                                </li>
+                    @endif
+                    </ul>
+
+                    
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->

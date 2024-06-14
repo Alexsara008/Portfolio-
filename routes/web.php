@@ -27,6 +27,20 @@ Auth::routes();
 
 Route::resource('/proyectos',App\Http\Controllers\ProyectoController::class);
 
+//definimos la ruta para el controlador de la informacion
+Route::resource('/information',App\Http\Controllers\InformationController::class);
+
+//definimos la ruta de informacion personal
+Route::resource('/informacion_personal',App\Http\Controllers\InformacionPersonalController::class);
+
+
+//ruta de index
+Route::resource('/indices',App\Http\Controllers\IndexController::class);
+
+//ruta persona
+
+//ruta descripciones
+Route::resource('/descripciones',App\Http\Controllers\DescripcioneController::class);
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
